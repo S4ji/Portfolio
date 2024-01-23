@@ -1,0 +1,13 @@
+$main-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 0, 0);
+$text-color-dark: black;
+$police-titre: 'Bebas Neue', sans-serif;
+$police-texte: 'MuseoModerno', sans-serif;
+$min-h-scroll-anim: 98vh;
+$color-scroll-anim: $main-color;
+$color-scroll-anim2: white;
+$gap-size: 10px;
+$size-control: 350px;
+$scaling-factor: 1.5;
+$background-stripes-gradient: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+$background-stripes-gradient-constant: calc((100vh - 150px) / 5);

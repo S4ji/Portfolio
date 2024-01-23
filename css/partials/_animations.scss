@@ -1,0 +1,140 @@
+// Pour la couleur de l'animation du logo, reprendre les couleurs du thème principal
+// et manipuler l'opacité manuellement.
+@use './variables' as *;
+
+@keyframes opacity2s {
+    0% {
+        opacity: 0%;
+        transform: translateX(50rem);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateX- {
+    0% {
+        transform: translateX(-50rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes translateX {
+    0% {
+        transform: translateX(50rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes borderAnimation {
+    0% {
+        width: 0%;
+    }
+    55% {
+        width: 0%;
+    }
+    100% {
+        width: 180px;
+    }
+}
+
+@keyframes translateOpacitY- {
+    0% {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+    98% {
+        opacity: 80;
+        transform: translateY(0rem);
+    }
+    100% {
+        opacity: 80;
+        transform: translateY(0);
+    }
+}
+
+@keyframes translateOpacitY {
+    0% {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+    95% {
+        opacity: 80;
+        transform: translateY(0rem);
+    }
+    100% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+@keyframes translateFillBlackX {
+    0% {
+        transform: translateX(50rem);
+        fill: #ff000000;
+    }
+
+    100% {
+        transform: translateX(0);
+        fill: #0000000f;
+    }
+}
+
+@keyframes translateFillBlackX- {
+    0% {
+        transform: translateX(-50rem);
+        fill: #ff000000;
+    }
+    50% {
+        transform: translateX(-20rem);
+        fill: #10000000;
+    }
+    100% {
+        transform: translateX(0);
+        fill: #0000000f;
+    }
+}
+
+@keyframes translateFillRedY {
+    0% {
+        transform: translateY(-50rem);
+        fill: #ff000000;
+    }
+    0% {
+        transform: translateY(-20rem);
+        fill: #ff00007b;
+    }
+    100% {
+        transform: translateY(0);
+        fill: #ff0000;
+    }
+}
+
+@keyframes scaleHeader {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+        transform: scale(1);
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

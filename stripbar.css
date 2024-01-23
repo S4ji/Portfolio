@@ -1,0 +1,47 @@
+section {
+    // BACKGRGOUND EFFECT
+
+    background: $background-stripes-gradient top right,
+        $background-stripes-gradient top $background-stripes-gradient-constant
+            right,
+        $background-stripes-gradient top
+            calc($background-stripes-gradient-constant * 2) right,
+        $background-stripes-gradient top
+            calc($background-stripes-gradient-constant * 3) right,
+        $background-stripes-gradient top
+            calc($background-stripes-gradient-constant * 4) right,
+        white;
+    background-repeat: no-repeat;
+    background-size: 0% $background-stripes-gradient-constant,
+        0% $background-stripes-gradient-constant,
+        0% $background-stripes-gradient-constant,
+        0% $background-stripes-gradient-constant,
+        0% $background-stripes-gradient-constant;
+
+    animation: backgroundStripeGradient 1s;
+
+    // effect on div
+    width: 100%;
+    height: calc((100vh - 150px));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+/* ANIMATION */
+@keyframes backgroundStripeGradient {
+    0% {
+        background-size: 91% $background-stripes-gradient-constant,
+            93% $background-stripes-gradient-constant,
+            95% $background-stripes-gradient-constant,
+            98% $background-stripes-gradient-constant,
+            100% $background-stripes-gradient-constant;
+    }
+    100% {
+        background-size: 0% $background-stripes-gradient-constant 0%
+            $background-stripes-gradient-constant 0%
+            $background-stripes-gradient-constant 0%
+            $background-stripes-gradient-constant 0%
+            $background-stripes-gradient-constant;
+    }
+}

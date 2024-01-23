@@ -1,0 +1,60 @@
+@use './variables' as *;
+
+.logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation: borderAnim 1s ease-out;
+}
+
+svg {
+    height: 3rem;
+}
+
+svg > path {
+    fill: $main-color;
+}
+
+.logo #X2,
+#S {
+    fill: $secondary-color;
+    transform: translate(0rem);
+    animation: translateFillRedY 1.1s ease-in-out;
+}
+
+#T,
+#Y,
+#U {
+    fill: $main-color;
+    transform: translateX(0);
+    animation: translateFillBlackX 1s ease-in-out;
+}
+
+#X1,
+#bar {
+    fill: $main-color;
+    transform: translateX(0);
+    animation: translateFillBlackX 1.1s ease-in-out;
+}
+
+.border-gradient-box {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 0.5rem;
+    overflow: hidden;
+    width: 180px;
+}
+
+.border-gradient {
+    border-image-source: linear-gradient(
+        to left,
+        $secondary-color,
+        $secondary-color
+    );
+    animation: borderAnimation 1.2s ease-in-out;
+}
+
+.border-mask {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
